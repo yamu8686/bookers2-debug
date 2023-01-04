@@ -496,12 +496,12 @@ Failures:
 
   19) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
       [31mFailure/Error: expect(page).to have_field 'user[name]', with: user.name[0m
-      [31m  expected to find visible field "user[name]" that is not disabled with value "ysp8exnzxl" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "ysp8exnzxl" but was nil[0m
+      [31m  expected to find visible field "user[name]" that is not disabled with value "f04ihkfzh2" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "f04ihkfzh2" but was nil[0m
       [36m# ./spec/system/02_after_login_spec.rb:373:in `block (4 levels) in <main>'[0m
 
   20) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
       [31mFailure/Error: expect(page).to have_field 'user[introduction]', with: user.introduction[0m
-      [31m  expected to find visible field "user[introduction]" that is not disabled with value "4m4urkum4qo2tu9brj9c" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "4m4urkum4qo2tu9brj9c" but was ""[0m
+      [31m  expected to find visible field "user[introduction]" that is not disabled with value "ps9dm2mh2ymgfypibkp9" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "ps9dm2mh2ymgfypibkp9" but was ""[0m
       [36m# ./spec/system/02_after_login_spec.rb:379:in `block (4 levels) in <main>'[0m
 
   21) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
@@ -619,8 +619,8 @@ Failures:
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `get_profile_image' for nil:NilClass[0m
-      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
-      [36m# ./app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb__63850292636454279_26180'[0m
+      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
+      [36m# ./app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3101082730393174684_26280'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -658,15 +658,15 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
+      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
 
   30) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
       [31mFailure/Error: <tr><%= image_tag current_user.get_profile_image, size:'100x100' %></tr>[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `get_profile_image' for nil:NilClass[0m
-      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
-      [36m# ./app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb__3273512931868574223_23780'[0m
+      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
+      [36m# ./app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___4594356991064847368_23880'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -704,7 +704,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
+      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
 
   31) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ情報編集画面
       [31mFailure/Error: redirect_to user_path(current_user)[0m
@@ -751,8 +751,8 @@ Failures:
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `get_profile_image' for nil:NilClass[0m
-      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
-      [36m# ./app/views/books/index.html.erb:6:in `_app_views_books_index_html_erb___4192608238849787983_26560'[0m
+      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
+      [36m# ./app/views/books/index.html.erb:6:in `_app_views_books_index_html_erb___721730900932770650_26660'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -790,15 +790,15 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
+      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
 
   33) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿詳細画面
       [31mFailure/Error: <tr><%= image_tag current_user.get_profile_image, size:'100x100' %></tr>[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `get_profile_image' for nil:NilClass[0m
-      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
-      [36m# ./app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb___3451378348833203899_31160'[0m
+      [36m# ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
+      [36m# ./app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb___38761944320236014_31160'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/rendering.rb:20:in `with_renderer'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
@@ -836,13 +836,13 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__339009826508810330_23800'[0m
+      [36m#   ./app/views/users/_info.html.erb:2:in `_app_views_users__info_html_erb__4146138776552835635_23900'[0m
 
   34) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面
       [31mFailure/Error: redirect_to boooks_path[0m
       [31m[0m
       [31mNameError:[0m
-      [31m  undefined local variable or method `boooks_path' for #<BooksController:0x0000000001eb40>[0m
+      [31m  undefined local variable or method `boooks_path' for #<BooksController:0x0000000001eca8>[0m
       [31m[0m
       [31m        redirect_to boooks_path[0m
       [31m                    ^^^^^^^^^^^[0m
@@ -885,7 +885,7 @@ Failures:
 
   35) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.introduction[0m
-      [31m  expected to find text "veytdel823ij4dcwcs99" in "Bookers\nhome users books log out\nUser info\nname eqa0zbtx37 introduction xw9w36j8agpkw1f68srr\nNew book\nTitle\nOpinion\nBook detail\nbfm4eojv38 pjinl xr32hzl4qkfk88uynwr9\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "s8cjb0fwuxz641nx0nvn" in "Bookers\nhome users books log out\nUser info\nname m8w56easmp introduction ixun6rt9vqsh0e9h8s1v\nNew book\nTitle\nOpinion\nBook detail\ndlle4057w6 w5dyj pk58980t4rreutak7cae\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:245:in `block (5 levels) in <main>'[0m
 
   36) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -895,7 +895,7 @@ Failures:
 
   37) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
       [31mFailure/Error: expect(page).not_to have_content user.name[0m
-      [31m  expected not to find text "mdbdi50ydr" in "Bookers\nhome users books log out\nUser info\nname mdbdi50ydr introduction 28tws1idece22y5b2huo\nNew book\nTitle\nOpinion\nBook detail\ni4cjz2osrs tf5s7 yxbjq7mwz1frn1x20mm7\nCopyRight Infratop.inc"[0m
+      [31m  expected not to find text "eto1as3p15" in "Bookers\nhome users books log out\nUser info\nname eto1as3p15 introduction 4uytsdxlckvgaub7vphu\nNew book\nTitle\nOpinion\nBook detail\n5895ddqwl5 4d32e 1sx2utgmjxzfssfqj8gx\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:251:in `block (5 levels) in <main>'[0m
 
   38) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
@@ -907,7 +907,7 @@ Failures:
       [31mFailure/Error: redirect_to boooks_path[0m
       [31m[0m
       [31mNameError:[0m
-      [31m  undefined local variable or method `boooks_path' for #<BooksController:0x00000000020e18>[0m
+      [31m  undefined local variable or method `boooks_path' for #<BooksController:0x00000000020f08>[0m
       [31m[0m
       [31m        redirect_to boooks_path[0m
       [31m                    ^^^^^^^^^^^[0m
@@ -950,7 +950,7 @@ Failures:
 
   40) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content other_user.name[0m
-      [31m  expected to find text "adzdwx60j7" in "Bookers\nhome users books log out\nUser info\nname p78mmuxbks introduction dm4qkw5mz65ye6v86v5z\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion ezajg ny6eb05hpoyyn8zeijju\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "puf2tztfr5" in "Bookers\nhome users books log out\nUser info\nname ih727wtpmy introduction 18lksygxpe8hepqdqtke\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion 7fjrt z7vuuonkv6uwr0vjav2i\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:293:in `block (5 levels) in <main>'[0m
 
   41) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -960,7 +960,7 @@ Failures:
 
   42) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
       [31mFailure/Error: expect(page).not_to have_content user.name[0m
-      [31m  expected not to find text "vk39diwiie" in "Bookers\nhome users books log out\nUser info\nname vk39diwiie introduction wjii6tzfbigp9ns4osnc\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion ua0q1 o7h1506rs5faoasqdog3\nCopyRight Infratop.inc"[0m
+      [31m  expected not to find text "65pzrkcztt" in "Bookers\nhome users books log out\nUser info\nname 65pzrkcztt introduction pg3l03y47mhgjwej0ovx\nNew book\nTitle\nOpinion\nBooks\nTitle Opinion e04xi 78r0t1ye64qs1pt0upzj\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:300:in `block (5 levels) in <main>'[0m
 
   43) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
@@ -996,7 +996,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.37.1/lib/capybara/dsl.rb:52:in `visit'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:366:in `block (4 levels) in <main>'[0m
 
-Finished in 16.92 seconds (files took 1.33 seconds to load)
+Finished in 25.32 seconds (files took 3.12 seconds to load)
 [31m199 examples, 44 failures[0m
 
 Failed examples:

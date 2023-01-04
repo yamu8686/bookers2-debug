@@ -13,7 +13,8 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.new
+   # @user = User.new
+   @user = current_user
   end
 
   def update
@@ -25,6 +26,19 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    user = User.find(params[:id])
+    user.destroy
+    redirect_to users_path(current_user.id), notice: 'Signed out successfully.'
+  end
+
+  def create
+    @user = User.new(user_params)
+    @user.save
+    flash[:notice] = 'Welcome!You have signd up successfully.'
+    redirect_to user_signed_in_path
+  end
+
   private
 
   def user_params
@@ -34,7 +48,7 @@ class UsersController < ApplicationController
   def ensure_correct_user
     @user = User.find(params[:id])
     unless @user == current_user
-      redirect_to user_path(current_user)
+      redirect_to user_path(current_user.id)
     end
   end
 end
