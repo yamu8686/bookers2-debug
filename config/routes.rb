@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   get 'relationships/followers'
   get 'relationships/create'
   get 'relationships/destroy'
-  
-  get "serch" => "searches#search"
+
+  get "search" => "searches#search"
 
   resources :books, only: [:index,:show,:edit,:create,:destroy,:update] do
     resource :favorites, only: [:create, :destroy]
